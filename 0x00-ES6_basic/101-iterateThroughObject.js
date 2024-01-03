@@ -3,5 +3,5 @@ export default function iterateThroughObject(reportWithIterator) {
   for (const rpt of reportWithIterator) {
     TheString.push(rpt);
   }
-  return TheString;
+  return TheString.join(' | ');
 }
