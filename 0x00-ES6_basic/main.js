@@ -1,5 +1,3 @@
-import getNeighborhoodsList from './2-arrow.js';
+import getBudgetForCurrentYear from './8-getBudgetCurrentYear.js';
 
-const neighborhoodsList = new getNeighborhoodsList();
-const res = neighborhoodsList.addNeighborhood('Noe Valley');
-console.log(res);
+console.log(getBudgetForCurrentYear(2100, 5200, 1090));
