@@ -12,9 +12,9 @@ export default class HolbertonCourse {
     if (students.some((student) => typeof student !== 'string')) {
       throw TypeError('Students must be an array of strings');
     }
-    this.name = name;
-    this.length = length;
-    this.students = students;
+    this._name = name;
+    this._length = length;
+    this._students = students;
   }
 
   get name() {
