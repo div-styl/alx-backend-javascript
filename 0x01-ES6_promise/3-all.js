@@ -1,7 +1,7 @@
-import { uploadPhoto, createUser } from './utils';
+import { uploadPhoto, createUser } from "./utils.js";
 
 export default function handleProfileSignup() {
   return Promise.all([uploadPhoto(), createUser()])
     .then((v) => console.log(`${v[0].body} ${v[1].firstName} ${v[1].lastName}`))
-    .catch(() => console.error('not singned up'));
+    .catch(() => console.error("not singned up"));
 }
