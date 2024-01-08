@@ -1,10 +1,10 @@
 export default function updateUniqueItems(MyMap) {
-  if (MyMap instanceof Map) {
-    return MyMap.forEach((v, k) => {
-      if (v === 1) {
-        MyMap.set(k, 100);
-      }
-    });
+  if (!(MyMap instanceof Map)) {
+    throw new Error('Cannot process');
   }
-  return 'Cannot process';
+  MyMap.forEach((v, k) => {
+    if (v === 1) {
+      MyMap.set(k, 100);
+    }
+  });
 }
