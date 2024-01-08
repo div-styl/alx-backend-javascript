@@ -19,6 +19,6 @@ export function queryAPI(endpoint) {
 
   // Check if the count for the endpoint exceeds the maximum limit.
   if (weakMap.get(endpoint) >= MAX_ENDPOINT) {
-    throw Error('Position outside range');
+    throw Error('Endpoint load is high');
   }
 }
