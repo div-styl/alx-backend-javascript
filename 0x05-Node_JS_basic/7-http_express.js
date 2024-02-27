@@ -51,3 +51,7 @@ app.get('/students', (req, res) => {
       res.send(`This is the list of our students\n${err.message}`);
     });
 });
+
+app.listen(1245, () => {});
+
+module.exports = app;
