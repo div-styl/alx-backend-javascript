@@ -8,6 +8,6 @@ router.get('/', AppController.getHomepage);
 
 router.get('/students', StudentsController.getAllStudents);
 
-rounter.get('/students/:major', StudentsController.getAllStudentsByMajor);
+router.get('/students/:major', StudentsController.getAllStudentsByMajor);
 
-module.exports = rounter;
+module.exports = router;
