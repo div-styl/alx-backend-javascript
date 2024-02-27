@@ -1,5 +1,5 @@
 const http = require('http');
-const fs = require('fs');
+const fs = require('fs').promises;
 
 async function countStudents(path) {
   return new Promise((resolve, reject) => {
@@ -33,7 +33,7 @@ async function countStudents(path) {
   });
 }
 
-const app = http.createServer(async (req, res) => {
+const app = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   if (req.url === '/') {
     res.end('Hello Holberton School!');
