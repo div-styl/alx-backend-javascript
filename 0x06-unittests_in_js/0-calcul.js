@@ -3,7 +3,3 @@ function calculateNumber(a, b) {
 }
 
 module.exports = calculateNumber
-
-// execute func
-let r = calculateNumber(1.7, 0)
-console.log(r)
