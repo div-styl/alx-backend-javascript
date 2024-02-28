@@ -31,8 +31,8 @@ describe("SUBTRACT of numbers", () => {
 // divide numbers
 describe("DIVIDE OF NUMBERS", () => {
   it("positive DIVIDE numbers", () => {
-    expect(calculateNumber('DIVIDE', 1, 4)).to.equal(0.25);
-    expect(calculateNumber('DIVIDE', 1, 3.7)).to.equal(0.25);
+    expect(calculateNumber("DIVIDE", 1, 4)).to.equal(0.25);
+    expect(calculateNumber("DIVIDE", 1, 3.7)).to.equal(0.25);
   });
   // negative numbers divide
   it("negative DIVIDE numbers and equal rounded down", () => {

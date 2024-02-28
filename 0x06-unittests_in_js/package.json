@@ -6,7 +6,8 @@
   "dependencies": {
     "chai": "*",
     "express": "^4.17.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "sinon": "^17.0.1"
   },
   "devDependencies": {
     "mocha": "^9.2.0"
